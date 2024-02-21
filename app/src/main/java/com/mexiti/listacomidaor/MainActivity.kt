@@ -85,7 +85,7 @@ fun MenuCard(platillo:Platillo, modifier: Modifier = Modifier ){
             Text(
                 text = LocalContext.current.getString(platillo.stringResourceId),
                 modifier = modifier.padding(22.dp),
-                style = MaterialTheme.typography.headlineMedium
+                style = MaterialTheme.typography.displayMedium
             )
             
         }
