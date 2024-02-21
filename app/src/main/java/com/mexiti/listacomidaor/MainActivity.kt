@@ -96,9 +96,9 @@ fun MenuCard(platillo:Platillo, modifier: Modifier = Modifier ){
 @Composable
 @Preview(showBackground = true)
 fun ShowMenuCard(){
-    MenuCardList(platilloList = DataSource().LoadPlatillos()  )
+    ListaComidaOrTheme (darkTheme = true) {
+        MenuCardList(platilloList = DataSource().LoadPlatillos()
+        )
+    }
+
 }
-
-
-
-
