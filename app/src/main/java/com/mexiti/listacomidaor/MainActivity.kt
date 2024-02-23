@@ -49,7 +49,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MenuApp(){
-    MenuCardList(platilloList = DataSource().LoadPlatillos())
+    MenuCardList(platilloList = DataSource().LoadPlatillos()
+        )
 }
 
 @Composable
@@ -78,16 +79,20 @@ fun MenuCard(platillo:Platillo, modifier: Modifier = Modifier ){
                 modifier =
                 modifier
                     .fillMaxWidth()
-                    .height(190.dp),
-                contentScale = ContentScale.Crop
+                    .height(175.dp),
+                //contentScale = ContentScale.Crop
 
             )
             Text(
                 text = LocalContext.current.getString(platillo.stringResourceId),
-                modifier = modifier.padding(22.dp),
+                modifier = modifier.padding(10.dp, 0.dp),
                 style = MaterialTheme.typography.displayMedium
             )
-            
+            Text(
+                text = LocalContext.current.getString(platillo.stringResourceId2),
+                modifier = modifier.padding(10.dp, 0.dp),
+                style = MaterialTheme.typography.displayMedium
+            )
         }
     }
 }
