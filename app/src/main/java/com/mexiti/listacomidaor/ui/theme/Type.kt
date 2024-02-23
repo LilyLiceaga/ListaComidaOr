@@ -15,26 +15,35 @@ val Montserrat = FontFamily(
     Font(R.font.montserrat_regular),
     Font(R.font.montserrat_bold)
 )
+val Cinzel = FontFamily(
+    Font(R.font.cinzel_bold)
+)
+val Prata = FontFamily(
+    Font(R.font.prata_regular)
+)
+val Comrmorant = FontFamily(
+    Font(R.font.cormorant_light)
+)
 // Set of Material typography styles to start with
 val Typography = Typography(
     displayLarge = TextStyle(
-        fontFamily = AbrilFatface,
+        fontFamily = Prata,
         fontWeight = FontWeight.Normal,
         fontSize = 36.sp,
     ),
 
     displayMedium = TextStyle(
-        fontFamily = Montserrat,
+        fontFamily = Cinzel,
         fontWeight = FontWeight.Bold,
         fontSize = 20.sp
     ),
     labelSmall = TextStyle(
-        fontFamily = Montserrat,
+        fontFamily = Cinzel,
         fontWeight = FontWeight.Bold,
         fontSize = 14.sp
     ),
     bodyLarge = TextStyle(
-        fontFamily = Montserrat,
+        fontFamily = Comrmorant,
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp
     )
