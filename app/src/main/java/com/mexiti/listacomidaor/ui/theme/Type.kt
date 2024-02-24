@@ -27,19 +27,31 @@ val Comrmorant = FontFamily(
 // Set of Material typography styles to start with
 val Typography = Typography(
     displayLarge = TextStyle(
-        fontFamily = Prata,
+        fontFamily = Cinzel,
         fontWeight = FontWeight.Normal,
         fontSize = 36.sp,
     ),
 
     displayMedium = TextStyle(
         fontFamily = Cinzel,
-        fontWeight = FontWeight.Bold,
-        fontSize = 20.sp
+        fontWeight = FontWeight.ExtraBold,
+        fontSize = 25.sp
+    ),
+
+    labelLarge = TextStyle(
+        fontFamily = Montserrat,
+        fontWeight = FontWeight.Normal,
+        fontSize = 18.sp
+    ),
+    labelMedium = TextStyle(
+        fontFamily = Montserrat,
+        fontWeight = FontWeight.ExtraBold,
+        fontSize = 16.sp,
+
     ),
     labelSmall = TextStyle(
-        fontFamily = Cinzel,
-        fontWeight = FontWeight.Bold,
+        fontFamily = Prata,
+        fontWeight = FontWeight.Normal,
         fontSize = 14.sp
     ),
     bodyLarge = TextStyle(

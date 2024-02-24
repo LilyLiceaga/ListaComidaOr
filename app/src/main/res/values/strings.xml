@@ -1,15 +1,21 @@
 <resources>
-    <string name="app_name">ListaComida</string>
-    <string name="desayuno">Desayunos en familia</string>
-    <string name="hamburger">Hamburguesa extra grande</string>
-    <string name="pizza">Pizzas a la orden</string>
-    <string name="postre">Disfruta de los postres </string>
-    <string name="pozole">Cualquier día es noche mexicana con Pozole </string>
-    <string name="tacos">Tacos de guisado </string>
-    <string name="precioDesayuno">Desde MX $250 </string>
+    <string name="app_name">Restaurante</string>
+    <string name="desayuno">Desayunos</string>
+    <string name="hamburger">Hamburguesas</string>
+    <string name="pizza">Pizzas</string>
+    <string name="postre">Postres</string>
+    <string name="pozole">Pozole</string>
+    <string name="tacos">Tacos</string>
+    <string name="precioDesayuno"> MX $250 </string>
     <string name="preciohamburger">MX $75 </string>
     <string name="precioPizza">MX $299 </string>
     <string name="precioPostre">MX $55 </string>
     <string name="precioPozole">MX $112 </string>
     <string name="precioTacos">MX $35 </string>
+    <string name="descuentoDesayuno">Ahorra 30% </string>
+        <string name="descuentohamburger">30% en compra de Combo Familiar </string>
+    <string name="descuentoPizza">Promoción 2 x 1 </string>
+    <string name="descuentoPostre">20% en postres selectos </string>
+    <string name="descuentoPozole"> </string>
+    <string name="descuentoTacos"> </string>
 </resources>

@@ -27,6 +27,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.platform.LocalContext
@@ -98,25 +99,29 @@ fun MenuCard(platillo:Platillo, modifier: Modifier = Modifier ){
                 contentDescription = stringResource(id = platillo.stringResourceId),
                 modifier =
                 modifier
-                    .size(170.dp)
+                    .size(145.dp)
                     .clip(CircleShape),
                 contentScale = ContentScale.Crop
             )
             Column {
-
                 Text(
                     text = LocalContext.current.getString(platillo.stringResourceId),
-                    modifier = modifier.padding(10.dp, 0.dp),
+                    modifier = modifier.padding(2.dp, 0.dp),
                     style = MaterialTheme.typography.displayMedium
                 )
                 Text(
                     text = LocalContext.current.getString(platillo.stringResourceId2),
-                    modifier = modifier.padding(10.dp, 0.dp),
-                    style = MaterialTheme.typography.displayMedium
+                    modifier = modifier.padding(2.dp, 0.dp,0.dp, 0.dp),
+                    style = MaterialTheme.typography.labelLarge
+                )
+                Text(
+                    text = LocalContext.current.getString(platillo.stringResourceId3),
+                    modifier = modifier.padding(2.dp, 0.dp, 0.dp, 0.dp),
+                    style = MaterialTheme.typography.labelMedium,
+                    color = Color.Cyan
                 )
             }
         }
-
     }
 }
 
@@ -142,9 +147,7 @@ fun MenuTopAppBar(modifier: Modifier = Modifier){
             }
         },
         modifier = modifier
-
     )
-
 }
 
 @Composable
@@ -154,5 +157,4 @@ fun ShowMenuCard(){
         MenuCardList(platilloList = DataSource().LoadPlatillos()
         )
     }
-
 }
